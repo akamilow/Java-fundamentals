@@ -3,8 +3,8 @@ public class AddDoors {
         System.out.println("-----------");
 
         Car myCar = new Car();
-        myCar.addDoors();
-        myCar.addDoors();
+        myCar.addDoor();
+        myCar.addDoor();
         System.out.println(myCar.doors);
 
         System.out.println("-----------");
@@ -14,7 +14,7 @@ public class AddDoors {
 
 class Car {
     int doors;
-    public void addDoors() {
+    public void addDoor() {
         this.doors++;
     }
 }
