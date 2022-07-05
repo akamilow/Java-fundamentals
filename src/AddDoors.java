@@ -5,6 +5,8 @@ public class AddDoors {
         Car myCar = new Car();
         myCar.addDoor();
         myCar.addDoor();
+        myCar.addDoor();
+        myCar.addDoor();
         System.out.println(myCar.doors);
 
         System.out.println("-----------");

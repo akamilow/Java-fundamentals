@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MissingChar",
+            "request": "launch",
+            "mainClass": "MissingChar",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
+            "name": "Launch calculadoraPrecios",
+            "request": "launch",
+            "mainClass": "calculadoraPrecios",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Reto1",
+            "request": "launch",
+            "mainClass": "Reto1",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
+            "name": "Launch NarcissisticNumber",
+            "request": "launch",
+            "mainClass": "NarcissisticNumber",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
             "name": "Launch NearHundred",
             "request": "launch",
             "mainClass": "NearHundred",
