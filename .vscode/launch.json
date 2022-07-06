@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ParrotTrouble",
+            "request": "launch",
+            "mainClass": "ParrotTrouble",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
             "name": "Launch HasTeen",
             "request": "launch",
             "mainClass": "HasTeen",
