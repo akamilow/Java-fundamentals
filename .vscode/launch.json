@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Makes10",
+            "request": "launch",
+            "mainClass": "Makes10",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
             "name": "Launch ParrotTrouble",
             "request": "launch",
             "mainClass": "ParrotTrouble",
