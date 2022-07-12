@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PalabraOculta",
+            "request": "launch",
+            "mainClass": "PalabraOculta",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
             "name": "Launch BackAround",
             "request": "launch",
             "mainClass": "BackAround",
