@@ -1,0 +1,86 @@
+La tienda de juguetes TOYSUN requiere de su colaboración en el desarrollo de un pequeño demo de aplicación para administrar el inventario. 
+Todos los juguetes tienen como atributos nombre, numero de piezas y edad permitida.
+ 
+Para ingresar las ventas al sistema, debe realizar una funcionalidad que le permita leer los siguiente comandos por consola.
+ 
+Procesar Comandos
+En la clase Inventario, se debe definir la función procesar comandos que realiza las siguientes operaciones:
+ 
+Agregar Juguete: Opción 1
+Se puede añadir un juguete de tipo electrónico con el siguiente comando:
+1/Electronico/nombre/numeroPiezas/edadPermitida/cantidadBaterias/vidaUtil
+Ejemplo:
+1/Electronico/Carro de formula 1/4/12/2/5
+ 
+Se puede añadir un juguete de tipo mecánico con el siguiente comando:
+1/Mecanico/nombre/numeroPiezas/edadPermitida/color
+Ejemplo:
+1/Mecanico/Caballito/1/10/rojo
+ 
+Listar ítems del inventario: Opción 2
+Se debe mostrar la frase: “***Inventario de Juguetes***” Seguida por los juguetes en el orden en el que fueron agregados.
+ 
+Si se trata de un juguete electrónico se mostrará así. Recuerde que \t permite correr el ítem unos espacios a la derecha:
+ 
+\tJuguete Electrónico - Nombre: Carro de formula 1
+\tpiezas:4
+\tedad:12
+\tbaterias:2
+\Vida útil:5
+ 
+Si se trata de un juguete Mecánico se mostrará así:
+ 
+\tJuguete Mecánico - Nombre: Caballito
+\tpiezas:1
+\tedad:10
+\tColor:rojo
+ 
+ 
+Nota 1: Observe que el único comando que tiene salida es el listar.
+ 
+Nota 2: En este ejercicio se requiere subir cuatro archivos. 
+ 
+Uno correspondiente a la clase Juguete llamado Juguete.java,
+otro correspondiente al Juguete Electrónico llamado Electronico.java
+otro correspondiente al Juguete Mecánico llamado Mecanico.java
+otro correspondiente al Inventario llamado Inventario.java (aquí va el main)
+Recuerde eliminar la línea de package al hacer el envío y utilizar el botón de [+] para agregar más de un archivo de código fuente.
+
+Ejemplo:
+ 
+Un ejemplo de ejecución del programa es el siguiente:
+
+ENTRADA:
+
+1/Electronico/Carro de formula 1/4/12/2/5
+1/Electronico/Carro Barbie/2/15/4/6
+1/Electronico/Carro policía/1/8/2/10
+1/Mecanico/Caballito/1/10/rojo
+2
+3
+
+SALIDA:
+***Inventario de juguetes***
+    Juguete Electronico - Nombre:Carro de formula 
+    piezas:
+    edad:1
+    baterias:
+    Vida útil:
+    Juguete Electronico - Nombre:Carro Barbi
+    piezas:
+    edad:1
+    baterias:
+    Vida útil:
+    Juguete Electronico - Nombre:Carro policí
+    piezas:
+    edad:
+    baterias:
+    Vida útil:1
+    Juguete Mecanico - Nombre:Caballit
+    piezas:
+    edad:1
+    color:rojo
+
+
+Se tienen dos tipos principales de Juguete: Electrónico, que contiene un atributo que indica la vida útil en años del juguete y el número de baterías; 
+y Mecánico, que no requieren de baterías y se interesa conocer el color del juguete.

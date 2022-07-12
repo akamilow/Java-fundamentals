@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Inventario",
+            "request": "launch",
+            "mainClass": "RETOSC2.RETO2.Inventario",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
             "name": "Launch Reto1",
             "request": "launch",
             "mainClass": "RETOSC2.RETO1.Reto1",
