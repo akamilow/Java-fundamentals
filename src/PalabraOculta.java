@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class PalabraOculta {
+    static Scanner entrada = new Scanner(System.in);
     static String palabraOculta = "camilo";
     static String[] palabra = {"_", "_", "_", "_", "_", "_"};
     static int intentos = palabraOculta.length(); //tamaño 6
@@ -57,7 +58,6 @@ public class PalabraOculta {
     }
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
         String letra;
 
         do {
