@@ -1,0 +1,98 @@
+María se dirige a la tienda a realizar las compras del día y vuelve a casa con algunos productos pero se percata de que le hicieron falta. 
+Cuando regresa a la tienda se da cuenta que esos productos que le hacían falta ya se agotaron, porque su amiga Marta ya los había comprado y a 
+ella también le sucedió lo mismo con algunos productos que se llevó maría.
+
+María se pone de acuerdo con Marta para intercambiar algunos productos. 
+Para ello plantean una lista de productos como la siguiente:
+
+[“tomate”,”cebolla”,”arroz”,”lentejas”,”zanahoria”,”manzana”,”mandarina”,”carne”,”pescado”]
+
+Para más facilidad a la hora del intercambio, María y Marta crean grupos de productos y les asignan un nombre. 
+Por ejemplo, el grupo “frutas” contiene los productos como manzana y mandarina. 
+El grupo “carnes” contiene los productos carne y pescado. 
+El grupo “granos” contiene arroz y lentejas. 
+El grupo “verduras” contiene los productos tomate, cebolla y zanahoria. 
+Para la lista de producto mostrada anteriormente la lista de grupos es la siguiente:
+
+[“verduras”,”verduras”,”granos”,”granos”,”verduras”,”frutas”,”frutas”,”carnes”,”carnes”]
+
+Marta y María sólo se puede cambiar productos que pertenezcan al mismo grupo.
+Para ayudar a Marta y María, se le pide a usted hacer un programa en java con nombre productos.java (sin método main) 
+que va a ser usado por otros programadores y que debe tener como mínimo las siguientes funciones:
+
+
+
+
+
+1. La función “grupos” que dada una lista en donde se muestra los grupos de cada producto 
+(cada posición i de la lista es el grupo del producto i), genera una lista con los grupos únicos existentes. 
+Por ejemplo, si se recibe una lista como la siguiente:
+
+[“verduras”,”verduras”,”granos”,”granos”,”verduras”,”frutas”,”frutas”,”carnes”,”carnes”] -> Lista de grupos
+
+Devuelve:
+
+[“verduras”,”granos”,”frutas”,”carnes”] -> Lista de grupos únicos
+
+
+
+2. La función “necesito_del_grupo” que, dada una lista con los índices de la lista de los productos, 
+la lista de los grupos de cada producto y el nombre de un grupo, 
+retorne una lista con los productos que se necesiten del grupo dado. 
+Por ejemplo, si se reciben los datos siguientes:
+
+[0,1,3,6,8] -> Son los índices de cada producto en la lista de productos
+
+[“verduras”,”verduras”,”granos”,”granos”,”verduras”,”frutas”,”frutas”,”carnes”,”carnes”] ->
+
+Lista de grupos
+
+“verduras” -> El grupo que interesa
+
+Retorna:
+
+[0,1,4] -> Se necesitan los productos que están en la posición 0,1 y 4 de la lista de productos que pertenecen al grupo “verduras”
+
+
+
+3. La función “sirven_a_marta” que dada una lista con los índices de la lista de productos que le sobran a María y una lista con los índices de productos que ya tiene Marta, 
+devolver la lista de índices de los productos que le sirven a Marta de María. Por ejemplo, si se reciben las siguientes listas:
+
+A María le sobran estos productos -> [0,1,5,6,8]
+
+Marta ya tiene ya tiene estos productos -> [0,2,5,6,7]
+
+Devolver:
+
+[1,8]
+
+De los productos que tiene María sólo le sirven a Marta [1,8]        
+
+
+
+4. Al final, Marta y María se ponen de acuerdo de que los grupos ya no les interesan, por lo que ahora se pueden cambiar productos de diferentes grupos. 
+Además, cada una de las dos tiene una lista con los productos que puede cambiar y aquellos productos que no estén en esa lista son los que necesita. 
+Para esto, el módulo que usted está construyendo deberá tener una nueva función llamada “cuantas_cambian” que recibirá dos listas. 
+La primera, serán los índices de los productos que puede cambiar Marta y la segunda los índices de los productos que puede cambiar María. 
+La función deberá retornar la cantidad de productos que se pueden cambiar. Por ejemplo, si se reciben las siguientes dos listas:
+
+[0,1,2,3,6,7] -> Marta puede cambiar los productos con índice 0, 1, 2, 3, 6 y 7.
+
+[2,3,5,6,8] -> María puede cambiar los productos con índice 2, 3, 5, 6 y 8.
+
+Retorna: 2
+
+2 -> Sólo se pueden cambiar dos productos, ya que a María le interesan los productos con índice 0, 1 y 7 de Marta, 
+pero a Marta sólo le interesan los productos con índice 5 y 8 porque los otros ya los tiene. Por ende, sólo se pueden hacer dos cambios.
+
+
+
+Observaciones:
+
+·   El programa no tiene entrada ni salida de datos, sólo se debe implementar las funciones solicitadas en una clase de java.
+
+·   Tener presente que el nombre del archivo y de las funciones se debe mantener como se especifica en el enunciado para que no haya errores en la evaluación.
+
+·   El orden de los argumentos de las funciones se debe mantener tal como se menciona en el enunciado.
+
+ 

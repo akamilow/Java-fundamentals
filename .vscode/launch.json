@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Producto",
+            "request": "launch",
+            "mainClass": "RETOSC2.RETO3.Producto",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Reto3",
+            "request": "launch",
+            "mainClass": "RETOSC2.RETO3.Reto3",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Productos",
+            "request": "launch",
+            "mainClass": "RETOSC2.RETO3.Productos",
+            "projectName": "java-fundamentals_f49e569e"
+        },
+        {
+            "type": "java",
             "name": "Launch Inventario",
             "request": "launch",
             "mainClass": "RETOSC2.RETO2.Inventario",
