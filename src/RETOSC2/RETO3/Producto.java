@@ -23,9 +23,9 @@ public class Producto {
         return necesito;
     }
 
-    public static ArrayList<Integer> sirven_a_marta(ArrayList<Integer> maria, ArrayList<Integer> marta) {
-        ArrayList<Integer> sirven = new ArrayList<>();
-        for (Integer i : maria) {
+    public static ArrayList<String> sirven_a_marta(ArrayList<String> maria, ArrayList<String> marta) {
+        ArrayList<String> sirven = new ArrayList<>();
+        for (String i : maria) {
             if (!marta.contains(i)) {
                 sirven.add(i);
             }
@@ -33,25 +33,24 @@ public class Producto {
         return sirven;
     }
 
-    public static Integer cuantas_cambian(ArrayList<Integer> maria, ArrayList<Integer> marta) {
-        ArrayList<Integer> listaMaria = new ArrayList<>();
-        ArrayList<Integer> listaMarta = new ArrayList<>();
+    public static Integer cuantas_cambian(ArrayList<String> entradaMaria, ArrayList<String> entradaMarta) {
+        ArrayList<String> listaMaria = new ArrayList<>();
+        ArrayList<String> listaMarta = new ArrayList<>();
 
-        if (marta.size() > maria.size()) {
-            for (Integer i : maria) {
-                if (!marta.contains(i)) {
+        if (entradaMarta.size() > entradaMaria.size()) {
+            for (String i : entradaMaria) {
+                if (!entradaMarta.contains(i)) {
                     listaMaria.add(i);
                 }
             }
             return listaMaria.size();
         } else {
-            for (Integer i : marta) {
-                if (!maria.contains(i)) {
+            for (String i : entradaMarta) {
+                if (!entradaMaria.contains(i)) {
                     listaMarta.add(i);
                 }
             }
             return listaMarta.size();
         }
     }
-    
 }
