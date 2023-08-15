@@ -9,17 +9,16 @@
 
 
 public class Diff21 {
-    public static void main(String[] args) {
-        Diff diff = new Diff();
-        System.out.println(diff.diff21(19));
-    }
-}
 
-class Diff {
-    public int diff21(int n) {
-        if (n > 21) {
-          return (n - 21) * 2;
-        }
-        return 21 - n;
-      }
+  public static int diff21(int n) {
+    if (n > 21) {
+      return (n - 21) * 2;
+    } else {
+      return 21 - n;
+    }
+  }
+
+  public static void main(String[] args) {
+    System.out.println(diff21(19));
+  }
 }
