@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ejercicio1 {
@@ -21,7 +22,6 @@ public class ejercicio1 {
 
 class Atleta {
     public Integer numeroAtletas;
-    public Integer numeroTiempos;
 
     public String[] arrayNombres;
     public String[] nacionalidades;
@@ -36,26 +36,21 @@ class Atleta {
     public void setNumeros() {
         System.out.println("----------------");
         System.out.print("Ingrese el numero de atletas: ");
-        numeroAtletas = sc.nextInt() +1;
-
-        System.out.println("----------------");
-        System.out.print("Ingrese el numero de tiempos: ");
-        numeroTiempos = sc.nextInt() +1;
+        numeroAtletas = sc.nextInt() + 1;
     }
 
     public void setNombres() {
-        arrayNombres = new String[numeroAtletas]; 
+        arrayNombres = new String[numeroAtletas];
 
         System.out.println("----------------");
-        System.out.println("Ingrese los nombres: ");  
+        System.out.println("Ingrese los nombres: ");
         for(int i=0; i < this.arrayNombres.length; i++) {  
             arrayNombres[i] = sc.nextLine();
-        }  
+        }
     }
 
     public void setNacionalidades() {
         nacionalidades = new String[numeroAtletas -1];
-
         System.out.println("----------------");
         System.out.println("Ingrese los paises en orden, y por atleta: ");  
         for(int i=0; i < this.nacionalidades.length; i++) {  
@@ -64,7 +59,7 @@ class Atleta {
     }
 
     public void setTiempos() {
-        tiempoAtletas = new Double[numeroTiempos -1];
+        tiempoAtletas = new Double[numeroAtletas -1];
         System.out.println("----------------");
         System.out.println("Ingrese los tiempos, en orden: ");  
         for(int i=0; i < tiempoAtletas.length; i++) {
@@ -97,6 +92,11 @@ class Atleta {
                 menor = tiempoAtletas[i];
             }
         }
-        System.out.println("EL GANADOR ES EL ATLETA CON TIEMPO: " + menor);
+
+        for (int i = 0; i < tiempoAtletas.length; i++) {
+            if(tiempoAtletas[i] == menor) {
+                System.out.println("EL GANADOR ES EL ATLETA: " + arrayNombres[i+1] + " CON TIEMPO: " + menor);
+            }
+        }
     }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ejercicio1",
+            "request": "launch",
+            "mainClass": "ejercicio1",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "Diff21",
             "request": "launch",
             "mainClass": "Diff21",
