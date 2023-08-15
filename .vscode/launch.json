@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Front3",
+            "request": "launch",
+            "mainClass": "Front3",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "Launch Obra",
             "request": "launch",
             "mainClass": "RETOSC2.RETO3.Obra",
