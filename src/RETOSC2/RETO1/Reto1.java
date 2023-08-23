@@ -1,8 +1,11 @@
 package RETOSC2.RETO1;
+
 /*
 Conforme la nueva reforma tributaria se establecieron los nuevos precios de la
 canasta familiar colombiana; la leche, los huevos y el café son los primeros productos
-afectados por esta reforma. Al preguntarle al tendero el precio de los huevos y la leche me responde que
+afectados por esta reforma. 
+
+Al preguntarle al tendero el precio de los huevos y la leche me responde que
 si le quito 4 pesos al precio de la leche obtengo dos veces el precio de los huevos y si sumo el precio de la leche y
 los huevos me da cinco veces el precio del café. Adicionalmente, todos los productos fueron gravados con
 diferentes porcentajes basados en las siguientes categorías:
@@ -35,23 +38,25 @@ dos
 tres
 * */
 import java.util.Scanner;
+
 public class Reto1 {
+    
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.println("Ingrese el precio del huevo: ");
+        System.out.println("Ingrese precio de los huevos:");
         int precioHuevos = sc.nextInt();
         int precioLeche = 2 * precioHuevos + 4;
         int precioCafe = (precioHuevos + precioLeche) / 5;
 
         System.out.println(precioHuevos + " " + precioLeche + " " + precioCafe);
-
-        if (precioCafe > 0 && precioCafe < 20) {
+        
+        if (precioCafe >= 0 && precioCafe <= 20) {
             System.out.println("uno");
-        } else if (precioCafe >= 21 && precioCafe < 30) {
+        } else if (precioCafe >= 21 && precioCafe <= 30) {
             System.out.println("dos");
-        } else if (precioCafe > 31 && precioCafe < 50) {
+        } else if (precioCafe >= 31 && precioCafe <= 50) {
             System.out.println("tres");
-        } else {
+        } else if (precioCafe >= 50) {
             System.out.println("cuatro");
         }
     }
