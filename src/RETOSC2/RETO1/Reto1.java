@@ -40,16 +40,20 @@ tres
 import java.util.Scanner;
 
 public class Reto1 {
-    
+
+    static int precioHuevos;
+    static int precioLeche;
+    static int precioCafe;
+
     static Scanner sc = new Scanner(System.in);
-    public static void main(String[] args) {
-        System.out.println("Ingrese precio de los huevos:");
-        int precioHuevos = sc.nextInt();
-        int precioLeche = 2 * precioHuevos + 4;
-        int precioCafe = (precioHuevos + precioLeche) / 5;
+
+    static void calcularPrecioCanasta(int preciodeHuevos) {
+        precioHuevos = preciodeHuevos;
+        precioLeche = 2 * precioHuevos + 4;
+        precioCafe = (precioHuevos + precioLeche) / 5;
 
         System.out.println(precioHuevos + " " + precioLeche + " " + precioCafe);
-        
+
         if (precioCafe >= 0 && precioCafe <= 20) {
             System.out.println("uno");
         } else if (precioCafe >= 21 && precioCafe <= 30) {
@@ -59,5 +63,10 @@ public class Reto1 {
         } else if (precioCafe >= 50) {
             System.out.println("cuatro");
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Ingrese precio de los huevos:");
+        calcularPrecioCanasta(sc.nextInt());
     }
 }
