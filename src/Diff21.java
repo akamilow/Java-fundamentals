@@ -7,18 +7,17 @@
     diff21(21) → 0
  */
 
-
 public class Diff21 {
+  static int n;
 
-  public static int diff21(int n) {
+  public static int absoluteDiff(int n) {
     if (n > 21) {
       return (n - 21) * 2;
-    } else {
-      return 21 - n;
     }
+    return 21 - n;
+  }
+  public static void main(String[] args) {
+    System.out.println(absoluteDiff(22));
   }
 
-  public static void main(String[] args) {
-    System.out.println(diff21(19));
-  }
 }

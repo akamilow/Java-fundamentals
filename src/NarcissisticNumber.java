@@ -13,43 +13,46 @@ El numero 1652 (4 digitos), no narcisista porque:
 
 Tu misión será hacer una función con el nombre "narcissistic" la cual retorne un true si el numero es narcisista o 
 un false sino y esta recibe un parámetro que es el numero a examinar.
- */
+*/
 
 import java.util.Scanner;
 
 public class NarcissisticNumber {
     static int number;
+    static String[] arrayNumberStr;
     
-    static char[] digits;
     static Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        setNumber();
-        System.out.println("----------");
-        numToStringList();
-        System.out.println("----------");
-        
-    }
-
-    public static int setNumber() {
+    public static int Number() {
         System.out.println("Ingrese un numero:");
         return number = sc.nextInt();
     }
 
-    public static char[] numToStringList() {
-        String numberStr = "";
-        numberStr = String.valueOf(number);
-        System.out.println(numberStr);
+    public static String[] arrayNumberStr() {
+        arrayNumberStr = String.valueOf(number).split("");
+        return arrayNumberStr;
+    }
+
+    public static void getArrayStr() {
+        for (int i= 0; i < arrayNumberStr.length; i++) {
+            System.out.println(arrayNumberStr[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        Number();
         System.out.println("----------");
-        digits = numberStr.toCharArray();
-        System.out.println(digits);
-        return digits;
-    } // quede en pasar cada caracter en int y despues hacer operaciones
+        arrayNumberStr();
+        getArrayStr();
+        
+    }
+    
+}
+
+// No terminado
+
+
 
     // public static double CalculatePower() {
     //     return Math.pow(num,pow);
     // }
-
-
-
-}

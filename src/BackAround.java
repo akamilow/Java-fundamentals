@@ -9,21 +9,27 @@ backAround("a") → "aaa"
  */
 
 public class BackAround {
+    
+    public static String backAround(String str) {
+        String lastChar = str.substring(str.length() - 1);
+        return lastChar + str + lastChar;
+    }
+
     public static void main(String[] args) {
         System.out.println(backAround("cat"));
         System.out.println(backAround("Hello"));
         System.out.println(backAround("a"));
     }
+}
 
-    public static String backAround(String str) {
-        String last = str.substring(str.length() - 1);
+/*
+ *      public static String backAround(String str) {
+            String last = str.substring(str.length() - 1);
 
-        if (str.length() == 1) {
+            if (str.length() == 1) {
             return str+str+str;
         }
 
         return last + str + last;
     }
-
-
-}
+ */

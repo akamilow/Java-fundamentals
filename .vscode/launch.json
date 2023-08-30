@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NarcissisticNumber",
+            "request": "launch",
+            "mainClass": "NarcissisticNumber",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "Inventario",
             "request": "launch",
             "mainClass": "RETOSC2.RETO2.Inventario",
