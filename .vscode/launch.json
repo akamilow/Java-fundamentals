@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "freeCodeCampDP.Fibonacci",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
+            "name": "Fib",
+            "request": "launch",
+            "mainClass": "freeCodeCampDP.Fib",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
+            "name": "Fib",
+            "request": "launch",
+            "mainClass": "Fib",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "NarcissisticNumber",
             "request": "launch",
             "mainClass": "NarcissisticNumber",
