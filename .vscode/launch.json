@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "rotateLeft3",
+            "request": "launch",
+            "mainClass": "rotateLeft3",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "FizzBuzz",
             "request": "launch",
             "mainClass": "FizzBuzz",
