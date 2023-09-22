@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayCount9",
+            "request": "launch",
+            "mainClass": "ArrayCount9",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "rotateLeft3",
             "request": "launch",
             "mainClass": "rotateLeft3",
