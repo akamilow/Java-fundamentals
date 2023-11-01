@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio1",
+            "request": "launch",
+            "mainClass": "UdeCUnidadTres.Ejercicio1",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "UdeCUnidadDos.App",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "DivisorStrings1071",
             "request": "launch",
             "mainClass": "LeetCode.DivisorStrings1071",
