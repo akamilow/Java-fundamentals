@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio7",
+            "request": "launch",
+            "mainClass": "UdeCUnidadTres.Ejercicio7",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio6",
             "request": "launch",
             "mainClass": "UdeCUnidadTres.Ejercicio6",
