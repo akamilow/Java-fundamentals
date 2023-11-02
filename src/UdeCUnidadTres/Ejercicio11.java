@@ -7,7 +7,6 @@ Crear un programa con un menú
 4. Dividir,
 5. Salir), y según la opción que selecciones el usuario del sistema
 pida dos números, los mande en una función y retorne el valor.
-USANDO FUNCIONES RECURSIVAS
 */
 import java.util.Scanner;
 
