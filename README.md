@@ -1,6 +1,6 @@
 # Java Fundamentals
 
-Retos en java para aprender logica
+Ejercicios en java para aprender logica
 
 
 ## Authors
