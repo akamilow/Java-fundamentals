@@ -4,10 +4,10 @@ Desarrollar una función recursiva que reciba por parámetro un número y regres
 */
 public class Ejercicio16 {
     static String binario(int n){
-        if(n<2){
+        if (n < 2) {
             return Integer.toString(n);
-        }else{
-            return binario(n/2)+Integer.toString(n%2);
+        } else {
+            return binario(n / 2) + Integer.toString(n % 2);
         }
     }
     public static void main(String[] args) {
