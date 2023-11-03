@@ -27,26 +27,21 @@ public class Ejercicio11 {
         return a / b;
     }
 
-    public static void main(String[] args) {
+    static void controlOpciones() {
         Scanner sc = new Scanner(System.in);
-        int opcion = 0;
-        int a = 0;
-        int b = 0;
-        do {
+        boolean salir = false;
+        if (!salir) {
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
             System.out.println("3. Multiplicar");
             System.out.println("4. Dividir");
             System.out.println("5. Salir");
-            System.out.print("Ingrese una opción: ");
-            opcion = sc.nextInt();
-            if (opcion != 5) {
-                System.out.print("Ingrese el primer número: ");
-                a = sc.nextInt();
-                System.out.print("Ingrese el segundo número: ");
-                b = sc.nextInt();
-            }
-            sc.close();
+            System.out.println("Ingrese una opción: ");
+            int opcion = sc.nextInt();
+            System.out.println("Ingrese el primer número: ");
+            int a = sc.nextInt();
+            System.out.println("Ingrese el segundo número: ");
+            int b = sc.nextInt();
             switch (opcion) {
                 case 1:
                     System.out.println("La suma de " + a + " y " + b + " es: " + sumar(a, b));
@@ -62,8 +57,14 @@ public class Ejercicio11 {
                     break;
                 case 5:
                     System.out.println("Saliendo...");
+                    salir = true;
                     break;
-                }
-        }   while (opcion != 5);
+            }
+        }
+        controlOpciones();
+    }
+
+    public static void main(String[] args) {
+        controlOpciones();
     }
 }
