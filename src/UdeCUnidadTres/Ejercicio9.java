@@ -1,6 +1,5 @@
 package UdeCUnidadTres;
 /*
-Usando recursividad 
 Desarrollar un programa que por medio de una función calcule la potencia de un número ingresado por parámetro.
  */
 public class Ejercicio9 {
