@@ -27,8 +27,9 @@ public class Ejercicio11 {
         return a / b;
     }
 
+    static Scanner sc = new Scanner(System.in);
+    
     static void controlOpciones() {
-        Scanner sc = new Scanner(System.in);
         boolean salir = false;
         if (!salir) {
             System.out.println("1. Sumar");
