@@ -1,0 +1,21 @@
+EJERCIOS DE LA ACTIVIDAD DE APRENDIZAJE
+
+1. Desarrollar un algoritmo que permita almacenar en un arreglo los números
+
+del 1 al 50 e imprima en pantalla lo que registro.
+
+2. Desarrollar un algoritmo que permita leer por pantalla 20 registros y
+
+almacenarlos en un arreglo, e imprimir el arreglo.
+
+3. Desarrollar un programa que almacena en un arreglo los números pares y
+
+en otro los números impares comprendidos entre 1 y 100 e imprima esos
+
+números almacenados.
+
+4. Desarrollar algoritmo que sume dos arreglos de 10 posiciones.
+
+5. Desarrollar un algoritmo que permita buscar en un arreglo un número ingresado por teclado e imprima el número y la posición en que fue
+
+encontrado
