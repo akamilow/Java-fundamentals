@@ -14,17 +14,19 @@ public class Ejercicio5 {
         int numBuscado = sc.nextInt();
         sc.close();
 
-        int indice = -1;
-        
+        boolean encontrado = false;
+        int index = 0;
+
         for (int i = 0; i < arreglo.length; i++) {
             if (arreglo[i] == numBuscado) {
-                indice = i;
+                encontrado = true;
+                index = i;
                 break;
             }
         }
         
-        if (indice != -1) {
-            System.out.println("El numero " + numBuscado + " fue encontrado en la posicion " + indice);
+        if (encontrado) {
+            System.out.println("El numero " + numBuscado + " fue encontrado en la posicion " + index);
         } else {
             System.out.println("El numero " + numBuscado + " no fue encontrado en el arreglo");
         }
