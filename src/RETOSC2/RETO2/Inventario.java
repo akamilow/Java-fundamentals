@@ -31,8 +31,14 @@ public class Inventario {
     public void procesarComandos() {
         String entrada = "";
 
-        while(!entrada.startsWith("3")) {
+        while(!entrada.equals("3")) {
             entrada = sc.nextLine();
+            
+            if (entrada.isEmpty()) {
+                System.out.println("Por favor, ingrese una opción válida.");
+                continue;
+            }
+            
             char opcion = entrada.charAt(0);
             
             switch (opcion) {
@@ -44,6 +50,9 @@ public class Inventario {
                     break;
                 case '3':
                     System.exit(0);
+                    break;
+                default:
+                    System.out.println("Opción no válida. Por favor, intente de nuevo.");
                     break;
             }
         }
