@@ -44,6 +44,7 @@ Uno correspondiente a la clase Juguete llamado Juguete.java,
 otro correspondiente al Juguete Electrónico llamado Electronico.java
 otro correspondiente al Juguete Mecánico llamado Mecanico.java
 otro correspondiente al Inventario llamado Inventario.java (aquí va el main)
+
 Recuerde eliminar la línea de package al hacer el envío y utilizar el botón de [+] para agregar más de un archivo de código fuente.
 
 Ejemplo:

@@ -11,10 +11,10 @@ public class Electronico extends Juguete{
     
     @Override
     public String toString() {
-        return "\tJuguete Electronico - Nombre:" + nombre + "\n" +
-                "\tpiezas:" + numeroPiezas + "\n" +
-                "\tedad:" + edadPermitida + "\n" +
-                "\tbaterias:" + cantidadBaterias + "\n" +
-                "\tVida útil:" + vidaUtil;
+        return "\tJuguete Electronico - Nombre: " + nombre + "\n" +
+                "\tpiezas: " + numeroPiezas + "\n" +
+                "\tedad: " + edadPermitida + "\n" +
+                "\tbaterias: " + cantidadBaterias + "\n" +
+                "\tVida útil: " + vidaUtil;
     }
 }

@@ -9,9 +9,9 @@ public class Mecanico extends Juguete {
 
     @Override
     public String toString() {
-        return "\tJuguete Mecanico - Nombre:" + nombre + "\n" +
-                "\tpiezas:" + numeroPiezas + "\n" +
-                "\tedad:" + edadPermitida + "\n" +
-                "\tcolor:" + color;
+        return "\tJuguete Mecanico - Nombre: " + nombre + "\n" +
+                "\tpiezas: " + numeroPiezas + "\n" +
+                "\tedad: " + edadPermitida + "\n" +
+                "\tcolor: " + color;
     }
 }
