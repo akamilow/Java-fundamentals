@@ -19,6 +19,7 @@ public class Inventario {
             jueguetes.add(new Mecanico(partes[2], partes[3], partes[4], partes[5]));
         } else if (partes[1].compareTo("Imaginario") == 0) {
             jueguetes.add(new Imaginario(partes[2], partes[3], partes[4], partes[5]));
+            
         }
     }
     

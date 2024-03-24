@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "array667",
+            "request": "launch",
+            "mainClass": "array667",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
+            "name": "stringYak",
+            "request": "launch",
+            "mainClass": "stringYak",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
+            "name": "sum3",
+            "request": "launch",
+            "mainClass": "sum3",
+            "projectName": "Java-fundamentals_1f5a717f"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio10",
             "request": "launch",
             "mainClass": "UdeCUnidadDos.Ejercicio10",
